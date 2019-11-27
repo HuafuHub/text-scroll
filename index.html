@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文字滚动</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .container{
+      width: 800px;
+      height: 30px;
+      background-color: deeppink;
+      padding: 30px;
+      margin: 50px auto;
+      border-radius: 20px;
+    }
+    .title{
+      height: 100%;
+      line-height: 30px;
+      float: left;
+      font-size: 24px;
+      color: #eee;
+    }
+    .title::after{
+      content: "|";
+      margin: 0 20px;
+      font-size: 24px;
+      color: #eee;
+      vertical-align: 1px;
+    }
+    .content{
+      height: 30px;
+      float: left;
+      overflow: hidden;
+    }
+    .content li{
+      height: 100%;
+      line-height: 30px;
+      font-size: 20px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3 class="title">最新动态</h3>
+    <ul class="content">
+      <li>1. Lorem ipsum dolor sit.</li>
+      <li>2. Perferendis, doloribus quisquam? Cum.</li>
+      <li>3. Deleniti nihil molestias architecto?</li>
+      <li>4. Neque ratione obcaecati quasi?</li>
+      <li>5. Quos illum dicta voluptatum?</li>
+    </ul>
+  </div>
+  <script src="./animate.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
